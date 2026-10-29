@@ -72,7 +72,7 @@ export class MenuScreenView implements View {
 	 * Update the stats display (null if they couldn't be loaded)
 	 */
 	updateStats(stats: LeaderboardStats | null): void {
-		if (stats == null) {
+		if (stats === null) {
 			this.statsText.text("Stats unavailable");
 		} else {
 			this.statsText.text(
